@@ -1,0 +1,64 @@
+/authnexus
+│
+├── /app
+│   ├── /Controllers
+│   │     AuthController.php
+│   │     DashboardController.php
+│   │
+│   ├── /Models
+│   │     User.php
+│   │     LoginAttempt.php
+│   │     ActivityLog.php
+│   │
+│   ├── /Core
+│   │     Router.php
+│   │     Controller.php
+│   │     Model.php
+│   │     Database.php
+│   │     Request.php
+│   │     Response.php
+│   │
+│   ├── /Services
+│   │     AuthService.php
+│   │     MailService.php
+│   │     TokenService.php
+│   │     RateLimiter.php
+│   │
+│   ├── /Middleware
+│   │     AuthMiddleware.php
+│   │     RoleMiddleware.php
+│   │     CsrfMiddleware.php
+│   │
+│   └── /Helpers
+│         csrf_helper.php
+│         session_helper.php
+│         redirect_helper.php
+│
+├── /config
+│     config.php
+│     database.php
+│
+├── /public
+│     index.php        ← single entry point
+│     .htaccess
+│
+├── /resources
+│   ├── /views
+│   │     /auth
+│   │         login.php
+│   │         register.php
+│   │         forgot-password.php
+│   │         reset-password.php
+│   │
+│   │     /dashboard
+│   │         admin.php
+│   │         user.php
+│   │
+│   └── /layouts
+│         header.php
+│         footer.php
+│
+├── /storage
+│     logs.txt
+│
+└── composer.json (optional for autoloading)
